@@ -1,0 +1,12 @@
+@use 'styles/abstracts' as a;
+
+.home {
+  margin: 24px clamp(0px, 7vw, 100px);
+}
+
+section {
+  background-position: bottom;
+  & > p {
+    line-height: 4rem;
+  }
+}

@@ -1,0 +1,18 @@
+@use 'styles/abstracts' as a;
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: clamp(20px, 10px + 3vw, 50px);
+  column-gap: clamp(20px, 10px + 3vw, 60px);
+  margin: 40px 0;
+  padding: clamp(0px, 5vw - 17px, 56px) clamp(0px, 5vw - 19px, 50px);
+  background-color: #f7f7f7;
+  border-radius: a.$bdrs-lg;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

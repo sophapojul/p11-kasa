@@ -1,0 +1,23 @@
+@use 'styles/abstracts' as a;
+
+.figure {
+  display: grid;
+  grid-template-columns: minmax(240px, 340px);
+
+  img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    border-radius: a.$bdrs-sm;
+  }
+
+  figcaption {
+    color: white;
+    font-size: a.$fz;
+    margin: 20px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: end;
+  }
+}
