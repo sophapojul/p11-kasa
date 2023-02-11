@@ -1,0 +1,25 @@
+@use 'styles/abstracts' as a;
+
+.div {
+  // min-height: 100dvh;
+  text-align: center;
+  h1 {
+    height: 100%;
+    color: a.$color-base;
+    font-size: clamp(a.$fz-error-m, 20vw, a.$fz-error-d);
+    font-weight: a.$fw-bold;
+    line-height: 22rem;
+    margin-top: 10rem;
+  }
+  p {
+    margin-top: clamp(0.6rem, 5vw, 4rem);
+    font-size: clamp(a.$fz, 5vw, a.$fz-xl);
+    line-height: clamp(a.$fz-lg, a.$fz-base + 3vw, a.$fz-xxl);
+  }
+  a {
+    display: block;
+    margin: 3rem 0 10rem;
+    font-size: clamp(a.$fz-base, 10px + 1vw, a.$fz);
+    text-decoration-line: underline;
+  }
+}
