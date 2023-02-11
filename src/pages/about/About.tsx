@@ -1,4 +1,7 @@
+import Banner from 'components/banner/Banner';
+import backgroundImage from 'assets/gustavo-alves-YOXSC4zRcxw-unsplash_1.jpg';
+
 function About() {
-  return <h1>About page</h1>;
+  return <Banner backgroundImage={backgroundImage} />;
 }
 export default About;
