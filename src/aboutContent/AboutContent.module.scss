@@ -1,0 +1,33 @@
+@use 'styles/abstracts' as a;
+
+.div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: a.$gap-about;
+  // container-type: inline-size;
+}
+
+.div > * {
+  // container-type: inline-size;
+  // font-size: 3cqi;
+  font-size: clamp(a.$fz-base, 2vw, a.$fz-lg);
+  line-height: clamp(a.$fz, 3vw, a.$fz-xl);
+}
+
+.button {
+  background-color: a.$color-base;
+}
+
+.div ul {
+  background-color: a.$color-dropdown;
+  border-radius: a.$bdrs-sm;
+  padding: clamp(0.7rem, 2vw, 1.7rem);
+  // padding: 2cqi;
+}
+
+@include a.respond-to(sm) {
+  .div {
+    width: 100%;
+  }
+}
