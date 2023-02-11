@@ -1,0 +1,58 @@
+@use 'styles/abstracts' as a;
+
+.section {
+  margin: 0 clamp(20px, 10vw + 2px, 100px);
+  display: grid;
+  grid-template: 'stack' 1fr;
+  place-items: center;
+  place-content: center;
+
+  & > * {
+    grid-area: stack;
+    max-width: 100%;
+  }
+
+  .carousel {
+    overflow: hidden;
+    display: flex;
+    .li {
+      flex: 1 0 100%;
+      max-height: 415px;
+      transition: transform ease-in-out 1s;
+      .img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: a.$bdrs-lg;
+      }
+    }
+  }
+
+  .buttons {
+    @include a.flex-center;
+    width: clamp(50px, 12vw, 100px);
+    font-size: 100px;
+    background-color: transparent;
+    padding: 10px;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    .prev {
+      place-self: center left;
+      left: 100px;
+    }
+    .next {
+      place-self: center right;
+      right: 100px;
+    }
+  }
+  .span {
+    place-self: end center;
+    width: 24px;
+    color: a.$color-title;
+    z-index: 1;
+    margin-bottom: clamp(a.$fz-base, 2vw, a.$fz-lg);
+  }
+}
