@@ -4,7 +4,6 @@
 .footer {
   @include a.flex-center;
   flex-direction: column;
-  margin: 0 clamp(-20px, -4vw, -100px);
   padding: a.$fz-lg clamp(0px, 2vw, a.$fz);
   background-color: #000;
 
