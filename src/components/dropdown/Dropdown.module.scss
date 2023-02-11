@@ -1,0 +1,21 @@
+@use 'styles/abstracts' as a;
+
+button {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: a.$color-base;
+  padding: 0.5em 1em;
+  border-radius: a.$bdrs-sm;
+  font-size: clamp(0.75em, 3vw, 1.3em);
+
+  .title {
+    color: a.$color-title;
+  }
+
+  .icon {
+    transition: transform 0.2s ease-in-out;
+    width: 1em;
+  }
+}
