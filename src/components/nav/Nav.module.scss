@@ -1,0 +1,18 @@
+@use 'styles/abstracts' as a;
+
+.ul {
+  display: flex;
+  gap: clamp(0.5rem, 3vw, 3rem);
+  font-size: clamp(a.$fz-base, 0.3rem + 2vw, a.$fz-lg);
+
+  .active {
+    text-decoration: true;
+    background-color: #00ff00;
+  }
+}
+
+@include a.respond-to(sm) {
+  .ul {
+    text-transform: uppercase;
+  }
+}

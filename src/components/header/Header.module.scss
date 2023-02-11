@@ -1,0 +1,7 @@
+@use 'styles/abstracts' as a;
+
+// TODO: change units
+.header {
+  @include a.flex-between;
+  margin: clamp(20px, 3vw, 40px) clamp(0px, 7vw, 100px);
+}
