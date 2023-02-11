@@ -16,11 +16,6 @@
   font-weight: 500;
 }
 
-/* html { */
-/*   display: flex; */
-/*   justify-content: center; */
-/* } */
-
 /* min body height */
 
 body {
@@ -28,11 +23,6 @@ body {
   min-height: 100dvh;
   max-width: 1440px;
   margin: 0 auto;
-  // background-color: $color-body;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* responsive images/videos */
@@ -42,6 +32,10 @@ svg,
 video {
   display: block;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 ol,
