@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from 'react';
-import ArrowDown from 'components/ArrowDown';
+import ArrowDown from 'components/arrows/ArrowDown';
 import styles from './Dropdown.module.scss';
 
 interface IDropdownItem extends PropsWithChildren {
@@ -33,7 +33,7 @@ export default function DropdownItem({
           }
           className={styles.icon}
         >
-          <ArrowDown />
+          <ArrowDown fill="#fff" />
         </span>
       </button>
       {open && children ? (

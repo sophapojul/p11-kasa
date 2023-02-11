@@ -1,4 +1,6 @@
-function ArrowDown() {
+import IFill from 'interfaces/IFill';
+
+function ArrowDown({ fill }: IFill) {
   return (
     <svg
       width="25"
@@ -9,7 +11,7 @@ function ArrowDown() {
     >
       <path
         d="M2.6635 0.859489L0.530579 3.00462L12.4605 14.9233L24.3904 2.99257L22.2575 0.859489L12.4605 10.6572L2.6635 0.859489Z"
-        fill="white"
+        fill={fill}
       />
     </svg>
   );
