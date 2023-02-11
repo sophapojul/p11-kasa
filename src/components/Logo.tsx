@@ -1,6 +1,5 @@
-interface IFill {
-  fill: string;
-}
+import IFill from 'interfaces/IFill';
+
 function Logo({ fill }: IFill) {
   return (
     <svg
