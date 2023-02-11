@@ -1,0 +1,21 @@
+@use 'styles/abstracts' as a;
+@use 'styles/base';
+
+.footer {
+  @include a.flex-center;
+  flex-direction: column;
+  margin: 0 clamp(-20px, -4vw, -100px);
+  padding: a.$fz-lg clamp(0px, 2vw, a.$fz);
+  background-color: #000;
+
+  & * {
+    margin: a.$fz;
+    font-size: clamp(a.$fz-base, 3vw, a.$fz-lg);
+    color: #fff;
+  }
+
+  & svg {
+    width: 122px;
+    margin: a.$fz-lg;
+  }
+}
