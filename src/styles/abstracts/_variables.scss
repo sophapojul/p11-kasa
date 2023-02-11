@@ -1,0 +1,37 @@
+$ff: 'Montserrat', sans-serif;
+// 12 14 18 24 36 48 96 288
+$factor: 2;
+$fz-base: 12px;
+$fz-sm: $fz-base + $factor;
+$fz: 18px;
+$fz-lg: $fz-base + $factor * 6;
+$fz-xl: $fz-base + $factor * 12;
+$fz-xxl: $fz-base + $factor * 18;
+$fz-error-d: $fz-base + $factor * 138;
+$fz-error-m: $fz-base + $factor * 42;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$gap-about: 1.7rem;
+
+$lh-base: 142.6%;
+
+$color-root: #e5e5e5;
+$color-base: #ff6060;
+$color-title: white;
+$color-banner: white;
+$color-tag: white;
+$color-dropdown: #f7f7f7;
+
+$bdrs-sm: 10px;
+$bdrs-lg: 25px;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

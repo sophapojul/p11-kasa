@@ -1,0 +1,23 @@
+@use 'styles/abstracts' as a;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  font-family: a.$ff;
+  font-size: a.$fz;
+  font-weight: a.$fw-regular;
+  line-height: a.$lh-base;
+  * {
+    color: a.$color-base;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: a.$color-title;
+}
+
+h1 {
+  font-size: a.$fz-xl;
+}

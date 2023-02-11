@@ -1,0 +1,50 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-weight: 500;
+}
+
+/* html { */
+/*   display: flex; */
+/*   justify-content: center; */
+/* } */
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 1440px;
+  margin: 0 auto;
+  // background-color: $color-body;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
