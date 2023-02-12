@@ -9,7 +9,6 @@ interface IErrorPage {
 }
 function ErrorPage() {
   const error = useRouteError() as IErrorPage;
-  console.log(error);
   return (
     <>
       <Header />
