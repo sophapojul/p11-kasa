@@ -1,10 +1,26 @@
-# Getting Started with Create React App
+# ![KASA](public/kasa-logo.svg)
+
+# Web application with React and React-Router
+
+## Environment
+
+- [Node v18.14](https://nodejs.org/en/)
+- [React v18.2](https://reactjs.org/)
+- [React-Router v6.8](https://reactrouter.com/en/main)
+- [Typescript v4.9](https://www.typescriptlang.org/)
+- styles with [Sass](https://sass-lang.com/) and [CSS Modules](https://github.com/css-modules/css-modules)
+- linter [eslint](https://eslint.org/) configuration [airbnb](https://airbnb.io/javascript/)
+- formater [Prettier](https://prettier.io/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn run deploy`
+
+Deploys the site to GitHub Pages : here is the [tutorial](https://github.com/gitname/react-gh-pages)
 
 ### `yarn start`
 
