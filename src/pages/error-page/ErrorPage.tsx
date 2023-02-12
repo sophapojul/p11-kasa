@@ -5,14 +5,16 @@ import styles from './ErrorPage.module.scss';
 
 interface IErrorPage {
   message: string;
+  status: number;
 }
 function ErrorPage() {
   const error = useRouteError() as IErrorPage;
+  console.log(error);
   return (
     <>
       <Header />
       <div className={styles.div}>
-        <h1>{error.message}</h1>
+        <h1>{error.message || error.status}</h1>
         <p>Oups! La page que vous demandez n&apos;existe pas.</p>
         <Link to="/">Retourner sur la page d&apos;accueil</Link>
       </div>
