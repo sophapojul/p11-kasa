@@ -5,27 +5,30 @@ import Lodging, { loader as lodgingLoader } from 'pages/Lodging';
 import ErrorPage from 'pages/error-page/ErrorPage';
 import Root from './Root';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-        loader: homeLoader,
-      },
-      {
-        path: 'about',
-        element: <About />,
-      },
-      {
-        path: ':id',
-        element: <Lodging />,
-        loader: lodgingLoader,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+          loader: homeLoader,
+        },
+        {
+          path: 'about',
+          element: <About />,
+        },
+        {
+          path: ':id',
+          element: <Lodging />,
+          loader: lodgingLoader,
+        },
+      ],
+    },
+  ],
+  { basename: `${process.env.PUBLIC_URL}` }
+);
 export default router;
