@@ -8,6 +8,7 @@ button {
   padding: 0.5em 1em;
   border-radius: a.$bdrs-sm;
   font-size: clamp(0.75em, 3vw, 1.3em);
+  cursor: pointer;
 
   .title {
     color: a.$color-title;
