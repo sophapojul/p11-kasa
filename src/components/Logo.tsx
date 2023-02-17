@@ -1,4 +1,4 @@
-import IFill from 'interfaces/IFill';
+import { IFill } from 'interfaces';
 
 function Logo({ fill }: IFill) {
   return (

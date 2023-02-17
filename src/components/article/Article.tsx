@@ -1,4 +1,4 @@
-import ILodging from 'interfaces/ILodging';
+import { ILodging } from 'interfaces';
 import Carousel from 'components/carousel/Carousel';
 import Rating from 'components/rating/Rating';
 import Dropdown from 'components/dropdown/Dropdown';

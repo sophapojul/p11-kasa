@@ -1,5 +1,5 @@
 import Star from 'components/Star';
-import ILodging from 'interfaces/ILodging';
+import { ILodging } from 'interfaces';
 import styles from './Rating.module.scss';
 
 function Rating({ rating }: { rating: ILodging['rating'] }) {

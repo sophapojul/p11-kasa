@@ -2,7 +2,7 @@ interface IHost {
   name: string;
   picture: string;
 }
-export default interface ILodging {
+interface ILodging {
   id: string;
   title: string;
   cover: string;
@@ -14,3 +14,8 @@ export default interface ILodging {
   equipments: Array<string>;
   tags: Array<string>;
 }
+
+interface IFill {
+  fill: string;
+}
+export { ILodging, IFill };

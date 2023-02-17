@@ -1,4 +1,4 @@
-import ILodging from 'interfaces/ILodging';
+import { ILodging } from 'interfaces';
 
 const API_URL = `${process.env.PUBLIC_URL}/api/logements.json`;
 export async function getAllLodgings() {

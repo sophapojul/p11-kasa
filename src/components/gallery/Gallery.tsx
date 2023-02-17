@@ -1,5 +1,5 @@
 import Card from 'components/card/Card';
-import ILodging from 'interfaces/ILodging';
+import { ILodging } from 'interfaces';
 import { Link, useLoaderData } from 'react-router-dom';
 import styles from './Gallery.module.scss';
 

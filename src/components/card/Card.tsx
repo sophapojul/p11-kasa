@@ -1,4 +1,4 @@
-import ILodging from 'interfaces/ILodging';
+import { ILodging } from 'interfaces';
 import styles from './Card.module.scss';
 
 function Card({
