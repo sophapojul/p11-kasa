@@ -39,7 +39,7 @@ function Article() {
           <Dropdown title="Description">{description}</Dropdown>
         </div>
         <div className={`"equipments", ${styles.equipments}`}>
-          <Dropdown title="Équipments">
+          <Dropdown title="Équipements">
             <Equipments equipments={equipments} />
           </Dropdown>
         </div>
