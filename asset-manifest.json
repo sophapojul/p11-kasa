@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/p11-kasa/static/css/main.e3fa2941.css",
-    "main.js": "/p11-kasa/static/js/main.827bf39c.js",
+    "main.js": "/p11-kasa/static/js/main.5172169b.js",
     "static/media/gustavo-alves-YOXSC4zRcxw-unsplash_1.jpg": "/p11-kasa/static/media/gustavo-alves-YOXSC4zRcxw-unsplash_1.434ba524c88681a7754d.jpg",
     "static/media/eric-muhr-P_XxsdVgtpQ-unsplash.jpg": "/p11-kasa/static/media/eric-muhr-P_XxsdVgtpQ-unsplash.8dbc3e4ffb4f7b0b3bc8.jpg",
     "index.html": "/p11-kasa/index.html",
     "main.e3fa2941.css.map": "/p11-kasa/static/css/main.e3fa2941.css.map",
-    "main.827bf39c.js.map": "/p11-kasa/static/js/main.827bf39c.js.map"
+    "main.5172169b.js.map": "/p11-kasa/static/js/main.5172169b.js.map"
   },
   "entrypoints": [
     "static/css/main.e3fa2941.css",
-    "static/js/main.827bf39c.js"
+    "static/js/main.5172169b.js"
   ]
 }
