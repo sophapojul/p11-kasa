@@ -2,11 +2,9 @@
 
 .home {
   margin: 24px clamp(0px, 7vw, 100px);
-}
+  height: 100%;
 
-section {
-  background-position: bottom;
-  & > p {
-    line-height: 4rem;
+  & > :first-child {
+    height: clamp(110px, 25vw, 223px);
   }
 }

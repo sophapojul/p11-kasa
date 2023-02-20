@@ -1,5 +1,5 @@
 import Banner from 'components/banner/Banner';
-import backgroundImage from 'assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
+import image from 'assets/eric-muhr-P_XxsdVgtpQ-unsplash_1.jpg';
 import Gallery from 'components/gallery/Gallery';
 import { useNavigation } from 'react-router-dom';
 import { getAllLodgings } from 'services/Api';
@@ -14,10 +14,12 @@ function Home() {
   if (navigation.state === 'loading') {
     return <h1> Loading...!</h1>;
   }
+  const background = `url("${image}") left center/cover no-repeat`;
+  console.log(background, typeof background);
   return (
     <main className={styles.home}>
       <Banner
-        backgroundImage={backgroundImage}
+        background={background}
         title={
           <>
             <span>Chez vous,&nbsp;</span>partout ailleurs
