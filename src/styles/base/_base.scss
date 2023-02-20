@@ -27,7 +27,7 @@ body {
   flex-direction: column;
 }
 
-body > div {
+#root {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
