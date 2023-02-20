@@ -1,28 +1,27 @@
 @use 'styles/abstracts' as a;
 
 .section {
-  min-height: clamp(100px, 55px + 15vw, 223px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   mix-blend-mode: darken;
-  border-radius: a.$bdrs-lg;
+  border-radius: clamp(a.$bdrs-sm, 4vw, a.$bdrs-lg);
   color: a.$color-banner;
   width: 100%;
-}
 
-.section > * {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: clamp(a.$fz-lg, a.$fz + 2vw, a.$fz-xxl);
-  margin: 1rem;
-}
-.title {
-  color: inherit;
-  span {
+  & > * {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp(a.$fz-lg, a.$fz + 2vw, a.$fz-xxl);
+    margin: 1rem;
+  }
+
+  .title {
     color: inherit;
+    line-height: 100%;
+    span {
+      color: inherit;
+    }
   }
 }
