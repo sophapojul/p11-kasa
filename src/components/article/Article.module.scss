@@ -22,9 +22,6 @@
   column-gap: 4rem;
   row-gap: 1.5rem;
   grid-template-columns: repeat(6, 1fr);
-  // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) auto;
-  // gap: a.$fz;
-  // grid-template-columns: minmax(240px, 50%) 1fr auto;
   grid-template-areas:
     'title title title title title figure'
     'location location location location location figure'
@@ -36,17 +33,14 @@
 
 h2 {
   grid-area: title;
-  // grid-column: span 2;
   color: a.$color-base !important;
   font-size: clamp(a.$fz, 3vw, a.$fz-xl);
 }
 p {
-  // grid-column: 1 / 4;
   grid-area: location;
   font-size: clamp(a.$fz-sm, 2vw, a.$fz);
 }
 figure {
-  // grid-column-start: 3;
   grid-area: figure;
   display: flex;
   align-items: center;
@@ -67,12 +61,10 @@ figure {
   }
 }
 .tags {
-  // grid-column: span 2;
   grid-area: tags;
   display: flex;
   flex-wrap: wrap;
   gap: a.$fz-base;
-  // font-size: clamp(a.$fz-base, 3vw, a.$fz-sm);
   li {
     color: a.$color-tag;
     padding: 3px clamp(30px, 2vw, 40px);
@@ -83,7 +75,6 @@ figure {
 }
 
 .description {
-  // grid-column: span 3;
   grid-area: description;
   h3 {
     background-color: a.$color-base;
@@ -98,7 +89,6 @@ figure {
   }
 }
 .equipments {
-  // grid-column: span 3;
   grid-area: equipments;
   h3 {
     font-size: clamp(a.$fz-base, 3vw, a.$fz);
