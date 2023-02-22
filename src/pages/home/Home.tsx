@@ -15,7 +15,6 @@ function Home() {
     return <h1> Loading...!</h1>;
   }
   const background = `url("${image}") left center/cover no-repeat`;
-  console.log(background, typeof background);
   return (
     <main className={styles.home}>
       <Banner
